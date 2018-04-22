@@ -288,7 +288,7 @@ class GitCommand(object):
             del(command[1])
         if not callback:
             callback = self.generic_done
-        command = ["bash", "-c"] + " ".join(command)
+        command = ["bash", "-c"] + [" ".join(command)]
         thread = CommandThread(command, callback, **kwargs)
         thread.start()
 
