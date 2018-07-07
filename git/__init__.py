@@ -161,7 +161,7 @@ def find_binary(cmd):
     return path
 
 
-GIT = find_binary('git')
+GIT = 'git'
 GITK = find_binary('gitk')
 
 
